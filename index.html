@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SENA - Registro de Pacientes</title>
+    <style>
+        body { font-family: sans-serif; padding: 30px; line-height: 1.6; }
+        form { max-width: 400px; background: #f4f4f4; padding: 20px; border-radius: 8px; }
+        input { width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; }
+        button { background: #28a745; color: white; padding: 10px; border: none; width: 100%; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<h2>Módulo: Registro de Pacientes</h2>
+
+<form>
+    <label>Nombre Completo:</label>
+    <input type="text" id="nombre" required minlength="3" placeholder="Ej: Santos Mosquera">
+
+    <label>Número de Identificación (Cédula):</label>
+    <input type="number" id="cedula" required>
+
+    <label>Correo Electrónico:</label>
+    <input type="email" id="correo" required placeholder="ejemplo@correo.com">
+
+    <label>Fecha de Registro:</label>
+    <input type="date" id="fecha" required>
+
+    <button type="submit">Guardar Información</button>
+</form>
+
+</body>
+</html>
